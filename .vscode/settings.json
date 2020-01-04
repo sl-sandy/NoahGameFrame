@@ -81,7 +81,9 @@
         "sstream": "cpp",
         "streambuf": "cpp",
         "typeindex": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "variant": "cpp",
+        "clocale": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

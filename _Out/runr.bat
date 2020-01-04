@@ -2,31 +2,37 @@ cd /d %~dp0
 cd Release
 
 echo Starting NFMasterServer...
-start "NFMasterServer" "NFPluginLoader.exe" "Server=MasterServer" "ID=3" "PluginX.xml"
+start "NFMasterServer" "NFServer.exe" "Server=MasterServer" "ID=3" "Plugin=Plugin.xml"
 
 choice /t 2 /d y /n >nul
 echo Starting NFWorldServer...
-start "NFWorldServer" "NFPluginLoader.exe" "Server=WorldServer" "ID=7" "PluginX.xml"
+start "NFWorldServer" "NFServer.exe" "Server=WorldServer" "ID=7" "Plugin=Plugin.xml"
 
 
 choice /t 5 /d y /n >nul
 
 echo Starting NFLoginServer...
-start "NFLoginServer" "NFPluginLoader.exe" "Server=LoginServer" "ID=4" "PluginX.xml"
+start "NFLoginServer" "NFServer.exe" "Server=LoginServer" "ID=4" "Plugin=Plugin.xml"
 
 choice /t 5 /d y /n >nul
 
 echo Starting NFDBServer...
-start "NFDBServer" "NFPluginLoader.exe" "Server=DBServer" "ID=8" "PluginX.xml"
+start "NFDBServer" "NFServer.exe" "Server=DBServer" "ID=8" "Plugin=Plugin.xml"
 
 
 choice /t 2 /d y /n >nul
 
 echo Starting NFGameServer...
-start "NFGameServer" "NFPluginLoader.exe" "Server=GameServer" "ID=6" "PluginX.xml"
+start "NFGameServer" "NFServer.exe" "Server=GameServer" "ID=6" "Plugin=Plugin.xml"
 
 choice /t 2 /d y /n >nul
 
 
 echo Starting NFProxyServer...
-start "NFProxyServer" "NFPluginLoader.exe" "Server=ProxyServer" "ID=5" "PluginX.xml"
+start "NFProxyServer" "NFServer.exe" "Server=ProxyServer" "ID=5" "Plugin=Plugin.xml"
+
+
+
+
+
+

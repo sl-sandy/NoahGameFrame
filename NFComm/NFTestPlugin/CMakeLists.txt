@@ -9,7 +9,7 @@ add_library(NFTestPlugin STATIC
 	${NFTestPlugin_ROOT_Cpp}
 	${NFTestPlugin_ROOT_Hpp})
 	
-set_target_properties( NFTestPlugin PROPERTIES OUTPUT_NAME_DEBUG "NFTestPlugin_d")
+set_target_properties( NFTestPlugin PROPERTIES OUTPUT_NAME_DEBUG "NFTestPlugin")
 set_target_properties( NFTestPlugin PROPERTIES PREFIX "")
 set_target_properties( NFTestPlugin PROPERTIES 
 	FOLDER "NFMidWare/NFTestPlugin"
@@ -25,7 +25,6 @@ if(UNIX)
 	target_link_libraries(NFTestPlugin -static-libstdc++)
 
 	add_definitions(
-		-D_USRDLL
 		-DELPP_NO_DEFAULT_LOG_FILE
 	)
 	
@@ -35,7 +34,6 @@ else()
 	
 	add_definitions(
 		-DWIN
-		-D_USRDLL
 		-DELPP_NO_DEFAULT_LOG_FILE
 	)
 endif()

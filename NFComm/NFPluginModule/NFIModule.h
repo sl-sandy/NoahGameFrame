@@ -31,6 +31,7 @@
 #include "NFComm/NFCore/NFMap.hpp"
 #include "NFComm/NFCore/NFList.hpp"
 #include "NFComm/NFCore/NFDataList.hpp"
+#include "NFComm/NFCore/NFSmartEnum.hpp"
 
 class NFIModule
 {
@@ -96,16 +97,6 @@ public:
     virtual NFIPluginManager* GetPluginManager() const
     {
         return pPluginManager;
-    }
-
-	virtual void YieldCo(const int64_t fSecond)
-	{
-		pPluginManager->YieldCo(fSecond);
-	}
-
-	virtual void YieldCo()
-	{
-        pPluginManager->YieldCo();
     }
 
     std::string strName;

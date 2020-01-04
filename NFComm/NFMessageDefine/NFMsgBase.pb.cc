@@ -202,7 +202,7 @@ static void InitDefaultsscc_info_Ident_NFMsgBase_2eproto() {
   ::NFMsg::Ident::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Ident_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Ident_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Ident_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_MsgBase_NFMsgBase_2eproto() {
@@ -216,7 +216,7 @@ static void InitDefaultsscc_info_MsgBase_NFMsgBase_2eproto() {
   ::NFMsg::MsgBase::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgBase_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MsgBase_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MsgBase_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -231,7 +231,7 @@ static void InitDefaultsscc_info_MultiObjectPropertyList_NFMsgBase_2eproto() {
   ::NFMsg::MultiObjectPropertyList::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MultiObjectPropertyList_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MultiObjectPropertyList_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MultiObjectPropertyList_NFMsgBase_2eproto}, {
       &scc_info_ObjectPropertyList_NFMsgBase_2eproto.base,}};
 
@@ -246,7 +246,7 @@ static void InitDefaultsscc_info_MultiObjectRecordList_NFMsgBase_2eproto() {
   ::NFMsg::MultiObjectRecordList::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MultiObjectRecordList_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_MultiObjectRecordList_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_MultiObjectRecordList_NFMsgBase_2eproto}, {
       &scc_info_ObjectRecordList_NFMsgBase_2eproto.base,}};
 
@@ -261,7 +261,7 @@ static void InitDefaultsscc_info_ObjectPropertyFloat_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyFloat::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyFloat_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyFloat_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyFloat_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyFloat_NFMsgBase_2eproto.base,}};
@@ -277,7 +277,7 @@ static void InitDefaultsscc_info_ObjectPropertyInt_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyInt::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyInt_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyInt_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyInt_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyInt_NFMsgBase_2eproto.base,}};
@@ -293,7 +293,7 @@ static void InitDefaultsscc_info_ObjectPropertyList_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyList::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_ObjectPropertyList_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_ObjectPropertyList_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 7, 0, InitDefaultsscc_info_ObjectPropertyList_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyInt_NFMsgBase_2eproto.base,
@@ -314,7 +314,7 @@ static void InitDefaultsscc_info_ObjectPropertyObject_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyObject::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyObject_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyObject_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyObject_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyObject_NFMsgBase_2eproto.base,}};
@@ -330,7 +330,7 @@ static void InitDefaultsscc_info_ObjectPropertyString_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyString::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyString_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyString_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyString_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyString_NFMsgBase_2eproto.base,}};
@@ -346,7 +346,7 @@ static void InitDefaultsscc_info_ObjectPropertyVector2_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyVector2::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyVector2_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyVector2_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyVector2_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyVector2_NFMsgBase_2eproto.base,}};
@@ -362,7 +362,7 @@ static void InitDefaultsscc_info_ObjectPropertyVector3_NFMsgBase_2eproto() {
   ::NFMsg::ObjectPropertyVector3::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyVector3_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectPropertyVector3_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectPropertyVector3_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_PropertyVector3_NFMsgBase_2eproto.base,}};
@@ -378,7 +378,7 @@ static void InitDefaultsscc_info_ObjectRecordAddRow_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordAddRow::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordAddRow_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordAddRow_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordAddRow_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordAddRowStruct_NFMsgBase_2eproto.base,}};
@@ -394,7 +394,7 @@ static void InitDefaultsscc_info_ObjectRecordBase_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordBase::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordBase_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordBase_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ObjectRecordBase_NFMsgBase_2eproto}, {
       &scc_info_RecordAddRowStruct_NFMsgBase_2eproto.base,}};
 
@@ -409,7 +409,7 @@ static void InitDefaultsscc_info_ObjectRecordFloat_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordFloat::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordFloat_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordFloat_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordFloat_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordFloat_NFMsgBase_2eproto.base,}};
@@ -425,7 +425,7 @@ static void InitDefaultsscc_info_ObjectRecordInt_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordInt::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordInt_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordInt_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordInt_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordInt_NFMsgBase_2eproto.base,}};
@@ -441,7 +441,7 @@ static void InitDefaultsscc_info_ObjectRecordList_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordList::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordList_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordList_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordList_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_ObjectRecordBase_NFMsgBase_2eproto.base,}};
@@ -457,7 +457,7 @@ static void InitDefaultsscc_info_ObjectRecordObject_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordObject::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordObject_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordObject_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordObject_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordObject_NFMsgBase_2eproto.base,}};
@@ -473,7 +473,7 @@ static void InitDefaultsscc_info_ObjectRecordRemove_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordRemove::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordRemove_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordRemove_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ObjectRecordRemove_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -488,7 +488,7 @@ static void InitDefaultsscc_info_ObjectRecordString_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordString::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordString_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordString_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordString_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordString_NFMsgBase_2eproto.base,}};
@@ -504,7 +504,7 @@ static void InitDefaultsscc_info_ObjectRecordSwap_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordSwap::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordSwap_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ObjectRecordSwap_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ObjectRecordSwap_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -519,7 +519,7 @@ static void InitDefaultsscc_info_ObjectRecordVector2_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordVector2::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordVector2_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordVector2_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordVector2_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordVector2_NFMsgBase_2eproto.base,}};
@@ -535,7 +535,7 @@ static void InitDefaultsscc_info_ObjectRecordVector3_NFMsgBase_2eproto() {
   ::NFMsg::ObjectRecordVector3::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordVector3_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ObjectRecordVector3_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ObjectRecordVector3_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,
       &scc_info_RecordVector3_NFMsgBase_2eproto.base,}};
@@ -551,7 +551,7 @@ static void InitDefaultsscc_info_PropertyFloat_NFMsgBase_2eproto() {
   ::NFMsg::PropertyFloat::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyFloat_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyFloat_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PropertyFloat_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_PropertyInt_NFMsgBase_2eproto() {
@@ -565,7 +565,7 @@ static void InitDefaultsscc_info_PropertyInt_NFMsgBase_2eproto() {
   ::NFMsg::PropertyInt::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyInt_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyInt_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PropertyInt_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_PropertyObject_NFMsgBase_2eproto() {
@@ -579,7 +579,7 @@ static void InitDefaultsscc_info_PropertyObject_NFMsgBase_2eproto() {
   ::NFMsg::PropertyObject::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyObject_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyObject_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PropertyObject_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -594,7 +594,7 @@ static void InitDefaultsscc_info_PropertyString_NFMsgBase_2eproto() {
   ::NFMsg::PropertyString::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyString_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PropertyString_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PropertyString_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_PropertyVector2_NFMsgBase_2eproto() {
@@ -608,7 +608,7 @@ static void InitDefaultsscc_info_PropertyVector2_NFMsgBase_2eproto() {
   ::NFMsg::PropertyVector2::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyVector2_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyVector2_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PropertyVector2_NFMsgBase_2eproto}, {
       &scc_info_Vector2_NFMsgBase_2eproto.base,}};
 
@@ -623,7 +623,7 @@ static void InitDefaultsscc_info_PropertyVector3_NFMsgBase_2eproto() {
   ::NFMsg::PropertyVector3::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyVector3_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_PropertyVector3_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_PropertyVector3_NFMsgBase_2eproto}, {
       &scc_info_Vector3_NFMsgBase_2eproto.base,}};
 
@@ -638,7 +638,7 @@ static void InitDefaultsscc_info_RecordAddRowStruct_NFMsgBase_2eproto() {
   ::NFMsg::RecordAddRowStruct::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_RecordAddRowStruct_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<6> scc_info_RecordAddRowStruct_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 6, 0, InitDefaultsscc_info_RecordAddRowStruct_NFMsgBase_2eproto}, {
       &scc_info_RecordInt_NFMsgBase_2eproto.base,
       &scc_info_RecordFloat_NFMsgBase_2eproto.base,
@@ -658,7 +658,7 @@ static void InitDefaultsscc_info_RecordFloat_NFMsgBase_2eproto() {
   ::NFMsg::RecordFloat::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordFloat_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordFloat_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RecordFloat_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_RecordInt_NFMsgBase_2eproto() {
@@ -672,7 +672,7 @@ static void InitDefaultsscc_info_RecordInt_NFMsgBase_2eproto() {
   ::NFMsg::RecordInt::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordInt_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordInt_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RecordInt_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_RecordObject_NFMsgBase_2eproto() {
@@ -686,7 +686,7 @@ static void InitDefaultsscc_info_RecordObject_NFMsgBase_2eproto() {
   ::NFMsg::RecordObject::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordObject_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordObject_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RecordObject_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -701,7 +701,7 @@ static void InitDefaultsscc_info_RecordString_NFMsgBase_2eproto() {
   ::NFMsg::RecordString::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordString_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RecordString_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RecordString_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_RecordVector2_NFMsgBase_2eproto() {
@@ -715,7 +715,7 @@ static void InitDefaultsscc_info_RecordVector2_NFMsgBase_2eproto() {
   ::NFMsg::RecordVector2::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordVector2_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordVector2_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RecordVector2_NFMsgBase_2eproto}, {
       &scc_info_Vector2_NFMsgBase_2eproto.base,}};
 
@@ -730,7 +730,7 @@ static void InitDefaultsscc_info_RecordVector3_NFMsgBase_2eproto() {
   ::NFMsg::RecordVector3::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordVector3_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_RecordVector3_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_RecordVector3_NFMsgBase_2eproto}, {
       &scc_info_Vector3_NFMsgBase_2eproto.base,}};
 
@@ -745,7 +745,7 @@ static void InitDefaultsscc_info_ReqAckLagTest_NFMsgBase_2eproto() {
   ::NFMsg::ReqAckLagTest::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ReqAckLagTest_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ReqAckLagTest_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ReqAckLagTest_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_ReqCommand_NFMsgBase_2eproto() {
@@ -759,7 +759,7 @@ static void InitDefaultsscc_info_ReqCommand_NFMsgBase_2eproto() {
   ::NFMsg::ReqCommand::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ReqCommand_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ReqCommand_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ReqCommand_NFMsgBase_2eproto}, {
       &scc_info_Ident_NFMsgBase_2eproto.base,}};
 
@@ -774,7 +774,7 @@ static void InitDefaultsscc_info_Vector2_NFMsgBase_2eproto() {
   ::NFMsg::Vector2::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector2_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector2_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Vector2_NFMsgBase_2eproto}, {}};
 
 static void InitDefaultsscc_info_Vector3_NFMsgBase_2eproto() {
@@ -788,7 +788,7 @@ static void InitDefaultsscc_info_Vector3_NFMsgBase_2eproto() {
   ::NFMsg::Vector3::InitAsDefaultInstance();
 }
 
-LIBPROTOC_EXPORT ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector3_NFMsgBase_2eproto =
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vector3_NFMsgBase_2eproto =
     {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Vector3_NFMsgBase_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_NFMsgBase_2eproto[39];
@@ -1476,7 +1476,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Ident::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* Ident::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.Ident)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1692,7 +1692,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Vector2::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* Vector2::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.Vector2)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1911,7 +1911,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Vector3::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* Vector3::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.Vector3)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2109,7 +2109,8 @@ const char* PropertyInt::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2140,7 +2141,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyInt::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyInt::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyInt)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2329,7 +2330,8 @@ const char* PropertyFloat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2360,7 +2362,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyFloat::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyFloat::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyFloat)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2551,14 +2553,16 @@ const char* PropertyString::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bytes data = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_data(), ptr, ctx);
+          auto str = _internal_mutable_data();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2582,7 +2586,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyString::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyString::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyString)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2788,7 +2792,8 @@ const char* PropertyObject::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2819,7 +2824,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyObject::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyObject::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyObject)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2835,7 +2840,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         2, _Internal::data(this), target, stream);
   }
 
@@ -3025,7 +3030,8 @@ const char* PropertyVector2::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3056,7 +3062,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyVector2::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyVector2::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyVector2)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3072,7 +3078,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         2, _Internal::data(this), target, stream);
   }
 
@@ -3262,7 +3268,8 @@ const char* PropertyVector3::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // bytes property_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_property_name(), ptr, ctx);
+          auto str = _internal_mutable_property_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3293,7 +3300,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PropertyVector3::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* PropertyVector3::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.PropertyVector3)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3309,7 +3316,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         2, _Internal::data(this), target, stream);
   }
 
@@ -3520,7 +3527,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordInt::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordInt::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordInt)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3760,7 +3767,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordFloat::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordFloat::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordFloat)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3982,7 +3989,8 @@ const char* RecordString::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // bytes data = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_data(), ptr, ctx);
+          auto str = _internal_mutable_data();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4006,7 +4014,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordString::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordString::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordString)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4266,7 +4274,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordObject::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordObject::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordObject)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4288,7 +4296,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         3, _Internal::data(this), target, stream);
   }
 
@@ -4526,7 +4534,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordVector2::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordVector2::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordVector2)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4548,7 +4556,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         3, _Internal::data(this), target, stream);
   }
 
@@ -4786,7 +4794,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordVector3::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordVector3::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordVector3)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4808,7 +4816,7 @@ failure:
   if (this->has_data()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         3, _Internal::data(this), target, stream);
   }
 
@@ -5093,7 +5101,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RecordAddRowStruct::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* RecordAddRowStruct::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.RecordAddRowStruct)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5110,7 +5118,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_int_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_record_int_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_record_int_list(i), target, stream);
   }
 
   // repeated .NFMsg.RecordFloat record_float_list = 3;
@@ -5118,7 +5126,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_float_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_record_float_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_record_float_list(i), target, stream);
   }
 
   // repeated .NFMsg.RecordString record_string_list = 4;
@@ -5126,7 +5134,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_string_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(4, this->_internal_record_string_list(i), target, stream);
+      InternalWriteMessage(4, this->_internal_record_string_list(i), target, stream);
   }
 
   // repeated .NFMsg.RecordObject record_object_list = 5;
@@ -5134,7 +5142,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_object_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(5, this->_internal_record_object_list(i), target, stream);
+      InternalWriteMessage(5, this->_internal_record_object_list(i), target, stream);
   }
 
   // repeated .NFMsg.RecordVector2 record_vector2_list = 6;
@@ -5142,7 +5150,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_vector2_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(6, this->_internal_record_vector2_list(i), target, stream);
+      InternalWriteMessage(6, this->_internal_record_vector2_list(i), target, stream);
   }
 
   // repeated .NFMsg.RecordVector3 record_vector3_list = 7;
@@ -5150,7 +5158,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_vector3_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(7, this->_internal_record_vector3_list(i), target, stream);
+      InternalWriteMessage(7, this->_internal_record_vector3_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5364,7 +5372,8 @@ const char* ObjectRecordBase::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // bytes record_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5400,7 +5409,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordBase::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordBase::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordBase)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5417,7 +5426,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_row_struct_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_row_struct(i), target, stream);
+      InternalWriteMessage(2, this->_internal_row_struct(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5635,7 +5644,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyInt::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyInt::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyInt)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5645,7 +5654,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -5654,7 +5663,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -5870,7 +5879,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyFloat::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyFloat::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyFloat)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5880,7 +5889,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -5889,7 +5898,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6105,7 +6114,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyString::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyString::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyString)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6115,7 +6124,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -6124,7 +6133,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6340,7 +6349,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyObject::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyObject::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyObject)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6350,7 +6359,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -6359,7 +6368,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6575,7 +6584,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyVector2::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyVector2::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyVector2)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6585,7 +6594,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -6594,7 +6603,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -6810,7 +6819,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyVector3::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyVector3::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyVector3)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6820,7 +6829,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -6829,7 +6838,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -7023,7 +7032,8 @@ const char* ObjectRecordInt::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7059,7 +7069,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordInt::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordInt::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordInt)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7069,7 +7079,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -7084,7 +7094,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -7291,7 +7301,8 @@ const char* ObjectRecordFloat::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7327,7 +7338,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordFloat::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordFloat::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordFloat)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7337,7 +7348,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -7352,7 +7363,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -7559,7 +7570,8 @@ const char* ObjectRecordString::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7595,7 +7607,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordString::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordString::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordString)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7605,7 +7617,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -7620,7 +7632,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -7827,7 +7839,8 @@ const char* ObjectRecordObject::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7863,7 +7876,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordObject::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordObject::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordObject)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7873,7 +7886,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -7888,7 +7901,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -8095,7 +8108,8 @@ const char* ObjectRecordVector2::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8131,7 +8145,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordVector2::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordVector2::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordVector2)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8141,7 +8155,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -8156,7 +8170,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -8363,7 +8377,8 @@ const char* ObjectRecordVector3::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8399,7 +8414,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordVector3::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordVector3::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordVector3)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8409,7 +8424,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -8424,7 +8439,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -8644,14 +8659,16 @@ const char* ObjectRecordSwap::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // bytes origin_record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_origin_record_name(), ptr, ctx);
+          auto str = _internal_mutable_origin_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bytes target_record_name = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_target_record_name(), ptr, ctx);
+          auto str = _internal_mutable_target_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8689,7 +8706,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordSwap::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordSwap::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordSwap)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8699,7 +8716,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -8957,7 +8974,8 @@ const char* ObjectRecordAddRow::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8993,7 +9011,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordAddRow::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordAddRow::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordAddRow)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9003,7 +9021,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -9018,7 +9036,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_row_data_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_row_data(i), target, stream);
+      InternalWriteMessage(3, this->_internal_row_data(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -9225,7 +9243,8 @@ const char* ObjectRecordRemove::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       // bytes record_name = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_record_name(), ptr, ctx);
+          auto str = _internal_mutable_record_name();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -9259,7 +9278,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordRemove::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordRemove::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordRemove)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9269,7 +9288,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -9592,7 +9611,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyList::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectPropertyList::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectPropertyList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9602,7 +9621,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -9611,7 +9630,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_int_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_property_int_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_property_int_list(i), target, stream);
   }
 
   // repeated .NFMsg.PropertyFloat property_float_list = 3;
@@ -9619,7 +9638,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_float_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_property_float_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_property_float_list(i), target, stream);
   }
 
   // repeated .NFMsg.PropertyString property_string_list = 4;
@@ -9627,7 +9646,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_string_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(4, this->_internal_property_string_list(i), target, stream);
+      InternalWriteMessage(4, this->_internal_property_string_list(i), target, stream);
   }
 
   // repeated .NFMsg.PropertyObject property_object_list = 5;
@@ -9635,7 +9654,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_object_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(5, this->_internal_property_object_list(i), target, stream);
+      InternalWriteMessage(5, this->_internal_property_object_list(i), target, stream);
   }
 
   // repeated .NFMsg.PropertyVector2 property_vector2_list = 6;
@@ -9643,7 +9662,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_vector2_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(6, this->_internal_property_vector2_list(i), target, stream);
+      InternalWriteMessage(6, this->_internal_property_vector2_list(i), target, stream);
   }
 
   // repeated .NFMsg.PropertyVector3 property_vector3_list = 7;
@@ -9651,7 +9670,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_property_vector3_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(7, this->_internal_property_vector3_list(i), target, stream);
+      InternalWriteMessage(7, this->_internal_property_vector3_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -9887,7 +9906,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MultiObjectPropertyList::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* MultiObjectPropertyList::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.MultiObjectPropertyList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9898,7 +9917,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_multi_player_property_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(1, this->_internal_multi_player_property(i), target, stream);
+      InternalWriteMessage(1, this->_internal_multi_player_property(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -10103,7 +10122,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordList::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ObjectRecordList::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ObjectRecordList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10113,7 +10132,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -10122,7 +10141,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_record_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(2, this->_internal_record_list(i), target, stream);
+      InternalWriteMessage(2, this->_internal_record_list(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -10313,7 +10332,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MultiObjectRecordList::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* MultiObjectRecordList::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.MultiObjectRecordList)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10324,7 +10343,7 @@ failure:
       n = static_cast<unsigned int>(this->_internal_multi_player_record_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(1, this->_internal_multi_player_record(i), target, stream);
+      InternalWriteMessage(1, this->_internal_multi_player_record(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -10526,7 +10545,8 @@ const char* MsgBase::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       // bytes msg_data = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_msg_data(), ptr, ctx);
+          auto str = _internal_mutable_msg_data();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10569,7 +10589,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* MsgBase::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* MsgBase::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.MsgBase)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10579,7 +10599,7 @@ failure:
   if (this->has_player_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::player_id(this), target, stream);
   }
 
@@ -10594,14 +10614,14 @@ failure:
       n = static_cast<unsigned int>(this->_internal_player_client_list_size()); i < n; i++) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(3, this->_internal_player_client_list(i), target, stream);
+      InternalWriteMessage(3, this->_internal_player_client_list(i), target, stream);
   }
 
   // .NFMsg.Ident hash_ident = 4;
   if (this->has_hash_ident()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         4, _Internal::hash_ident(this), target, stream);
   }
 
@@ -10812,7 +10832,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ReqAckLagTest::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ReqAckLagTest::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ReqAckLagTest)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11044,7 +11064,8 @@ const char* ReqCommand::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // bytes command_str_value = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_command_str_value(), ptr, ctx);
+          auto str = _internal_mutable_command_str_value();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -11065,7 +11086,8 @@ const char* ReqCommand::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // bytes command_value_str = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_command_value_str(), ptr, ctx);
+          auto str = _internal_mutable_command_value_str();
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -11110,7 +11132,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ReqCommand::InternalSerializeWithCachedSizesToArray(
+::PROTOBUF_NAMESPACE_ID::uint8* ReqCommand::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:NFMsg.ReqCommand)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11120,7 +11142,7 @@ failure:
   if (this->has_control_id()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         1, _Internal::control_id(this), target, stream);
   }
 
@@ -11159,7 +11181,7 @@ failure:
   if (this->has_command_value_object()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessageToArray(
+      InternalWriteMessage(
         7, _Internal::command_value_object(this), target, stream);
   }
 

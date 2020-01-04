@@ -33,7 +33,74 @@
 #include "NFComm/NFPluginModule/NFPlatform.h"
 
 #if NF_PLATFORM == NF_PLATFORM_WIN
+#pragma comment( lib, "opengl32.lib" )
 #pragma comment( lib, "ws2_32.lib" )
+#pragma comment( lib, "version.lib" )
+//#pragma comment( lib, "SDL2maind.lib" )
+#pragma comment( lib, "msimg32.lib" )
+#pragma comment( lib, "winmm.lib" )
+#pragma comment( lib, "imm32.lib" )
+//#pragma comment( lib, "msvcrt.lib" )
+#pragma comment (lib, "Setupapi.lib")
+
+#ifndef NF_DYNAMIC_PLUGIN
+#ifdef NF_DEBUG_MODE
+#pragma comment( lib, "libprotobufd.lib" )
+#pragma comment( lib, "SDL2d.lib" )
+#else
+#pragma comment( lib, "libprotobuf.lib" )
+#pragma comment( lib, "SDL2.lib" )
+#endif
+
+#pragma comment( lib, "NFCore.lib" )
+#pragma comment( lib, "NFMessageDefine.lib" )
+#pragma comment( lib, "event.lib" )
+#pragma comment( lib, "event_core.lib" )
+#pragma comment( lib, "lua.lib" )
+#pragma comment( lib, "navigation.lib" )
+#pragma comment( lib, "hiredis.lib" )
+
+
+#pragma comment( lib, "NFCore.lib" )
+#pragma comment( lib, "NFActorPlugin.lib" )
+#pragma comment( lib, "NFConfigPlugin.lib" )
+#pragma comment( lib, "NFKernelPlugin.lib" )
+#pragma comment( lib, "NFLogPlugin.lib" )
+#pragma comment( lib, "NFLuaScriptPlugin.lib" )
+#pragma comment( lib, "NFNavigationPlugin.lib" )
+#pragma comment( lib, "NFNetPlugin.lib" )
+#pragma comment( lib, "NFNoSqlPlugin.lib" )
+#pragma comment( lib, "NFSecurityPlugin.lib" )
+#pragma comment( lib, "NFTestPlugin.lib" )
+#pragma comment( lib, "NFUIPlugin.lib" )
+#pragma comment( lib, "NFBluePrintPlugin.lib" )
+
+#pragma comment( lib, "NFDBLogicPlugin.lib" )
+#pragma comment( lib, "NFDBNet_ClientPlugin.lib" )
+#pragma comment( lib, "NFDBNet_ServerPlugin.lib" )
+
+#pragma comment( lib, "NFGameServerPlugin.lib" )
+#pragma comment( lib, "NFGameServerNet_ClientPlugin.lib" )
+#pragma comment( lib, "NFGameServerNet_ServerPlugin.lib" )
+
+#pragma comment( lib, "NFLoginLogicPlugin.lib" )
+#pragma comment( lib, "NFLoginNet_ClientPlugin.lib" )
+#pragma comment( lib, "NFLoginNet_ServerPlugin.lib" )
+#pragma comment( lib, "NFLoginNet_HttpServerPlugin.lib" )
+
+#pragma comment( lib, "NFMasterServerPlugin.lib" )
+#pragma comment( lib, "NFMasterNet_ServerPlugin.lib" )
+#pragma comment( lib, "NFMasterNet_HttpServerPlugin.lib" )
+
+#pragma comment( lib, "NFProxyLogicPlugin.lib" )
+#pragma comment( lib, "NFProxyServerNet_ClientPlugin.lib" )
+#pragma comment( lib, "NFProxyServerNet_ServerPlugin.lib" )
+
+#pragma comment( lib, "NFWorldNet_ClientPlugin.lib" )
+#pragma comment( lib, "NFWorldNet_ServerPlugin.lib" )
+
+#endif
+
 #endif
 
 #ifdef NF_DEBUG_MODE
@@ -65,15 +132,19 @@
 #include "NFComm/NFNavigationPlugin/NFNavigationPlugin.h"
 #include "NFComm/NFNetPlugin/NFNetPlugin.h"
 #include "NFComm/NFNoSqlPlugin/NFNoSqlPlugin.h"
-#include "NFComm/NFScalePlugin/NFScalePlugin.h"
 #include "NFComm/NFSecurityPlugin/NFSecurityPlugin.h"
 #include "NFComm/NFTestPlugin/NFTestPlugin.h"
+
+#if NF_PLATFORM != NF_PLATFORM_LINUX
+#include "NFComm/NFUIPlugin/NFUIPlugin.h"
+#include "NFComm/NFBluePrintPlugin/NFBluePrintPlugin.h"
+#endif
+
 //DB
 #include "NFServer/NFDBLogicPlugin/NFDBLogicPlugin.h"
 #include "NFServer/NFDBNet_ClientPlugin/NFDBNet_ClientPlugin.h"
 #include "NFServer/NFDBNet_ServerPlugin/NFDBNet_ServerPlugin.h"
 //GAME
-#include "NFServer/NFGameLogicPlugin/NFGameLogicPlugin.h"
 #include "NFServer/NFGameServerNet_ClientPlugin/NFGameServerNet_ClientPlugin.h"
 #include "NFServer/NFGameServerNet_ServerPlugin/NFGameServerNet_ServerPlugin.h"
 #include "NFServer/NFGameServerPlugin/NFGameServerPlugin.h"
@@ -90,39 +161,11 @@
 #include "NFServer/NFProxyServerNet_ClientPlugin/NFProxyServerNet_ClientPlugin.h"
 #include "NFServer/NFProxyServerNet_ServerPlugin/NFProxyServerNet_ServerPlugin.h"
 //WORLD
-#include "NFServer/NFWorldLogicPlugin/NFWorldLogicPlugin.h"
 #include "NFServer/NFWorldNet_ClientPlugin/NFWorldNet_ClientPlugin.h"
 #include "NFServer/NFWorldNet_ServerPlugin/NFWorldNet_ServerPlugin.h"
-//MIDWARE
-#include "NFMidWare/NFAIPlugin/NFAIPlugin.h"
-#include "NFMidWare/NFAOIPlugin/NFAOIPlugin.h"
-#include "NFMidWare/NFChatPlugin/NFChatPlugin.h"
-#include "NFMidWare/NFFriendPlugin/NFFriendPlugin.h"
-#include "NFMidWare/NFTeamPlugin/NFTeamPlugin.h"
-#include "NFMidWare/NFClanPlugin/NFClanPlugin.h"
-#include "NFMidWare/NFHeroPlugin/NFHeroPlugin.h"
-#include "NFMidWare/NFItemBagPlugin/NFItemBagPlugin.h"
-#include "NFMidWare/NFMailPlugin/NFMailPlugin.h"
-#include "NFMidWare/NFRankPlugin/NFRankPlugin.h"
-#include "NFMidWare/NFShopPlugin/NFShopPlugin.h"
-#include "NFMidWare/NFSkillPlugin/NFSkillPlugin.h"
-#include "NFMidWare/NFTaskPlugin/NFTaskPlugin.h"
-#include "NFMidWare/NFUserGiftPlugin/NFUserGiftPlugin.h"
-//TUTORIAL
-#include "Tutorial/Tutorial1/Tutorial1.h"
-#include "Tutorial/Tutorial2/Tutorial2.h"
-#include "Tutorial/Tutorial3/Tutorial3Plugin.h"
-#include "Tutorial/Tutorial4/Tutorial4Plugin.h"
-#include "Tutorial/Tutorial5/Tutorial5.h"
-#include "Tutorial/Tutorial6/Tutorial6.h"
-#include "Tutorial/Tutorial7/Tutorial7.h"
+
 
 #endif
-
-void CoroutineExecute(void* arg)
-{
-	NFPluginManager::Instance()->Execute();
-}
 
 NFPluginManager::NFPluginManager() : NFIPluginManager()
 {
@@ -145,11 +188,9 @@ NFPluginManager::NFPluginManager() : NFIPluginManager()
 
 	mstrConfigPath = "../";
 
-#ifdef NF_DEBUG_MODE
+
    mstrConfigName = "NFDataCfg/Debug/Plugin.xml";
-#else
-   mstrConfigName = "NFDataCfg/Release/Plugin.xml";
-#endif
+
 }
 
 NFPluginManager::~NFPluginManager()
@@ -161,8 +202,6 @@ bool NFPluginManager::LoadPlugin()
 {
 	std::cout << "----LoadPlugin----" << std::endl;
 
-	LoadPluginConfig();
-
 #ifndef NF_DYNAMIC_PLUGIN
 	LoadStaticPlugin();
 #endif
@@ -170,10 +209,10 @@ bool NFPluginManager::LoadPlugin()
 	PluginNameMap::iterator it = mPluginNameMap.begin();
 	for (; it != mPluginNameMap.end(); ++it)
 	{
-#ifdef NF_DYNAMIC_PLUGIN
-		LoadPluginLibrary(it->first);
-#else
+#ifndef NF_DYNAMIC_PLUGIN
 		LoadStaticPlugin(it->first);
+#else
+		LoadPluginLibrary(it->first);
 #endif
 	}
 
@@ -209,8 +248,6 @@ inline bool NFPluginManager::Init()
 		itInstance->second->Init();
 	}
 
-   mxCoroutineManager.Init(CoroutineExecute);
-
 	return true;
 }
 
@@ -225,20 +262,31 @@ bool NFPluginManager::LoadPluginConfig()
 
     rapidxml::xml_node<>* pRoot = xDoc.first_node();
     rapidxml::xml_node<>* pAppNameNode = pRoot->first_node(mstrAppName.c_str());
-    if (!pAppNameNode)
+    if (pAppNameNode)
     {
-        NFASSERT(0, "There are no App ID", __FILE__, __FUNCTION__);
-        return false;
+		for (rapidxml::xml_node<>* pPluginNode = pAppNameNode->first_node("Plugin"); pPluginNode; pPluginNode = pPluginNode->next_sibling("Plugin"))
+		{
+			const char* strPluginName = pPluginNode->first_attribute("Name")->value();
+
+			mPluginNameMap.insert(PluginNameMap::value_type(strPluginName, true));
+
+			//std::cout << strPluginName << std::endl;
+		}
     }
-
-    for (rapidxml::xml_node<>* pPluginNode = pAppNameNode->first_node("Plugin"); pPluginNode; pPluginNode = pPluginNode->next_sibling("Plugin"))
-    {
-        const char* strPluginName = pPluginNode->first_attribute("Name")->value();
-
-        mPluginNameMap.insert(PluginNameMap::value_type(strPluginName, true));
-
-		//std::cout << strPluginName << std::endl;
-    }
+	else
+	{
+		for (rapidxml::xml_node<>* pServerNode = pRoot->first_node(); pServerNode; pServerNode = pServerNode->next_sibling())
+		{
+			for (rapidxml::xml_node<>* pPluginNode = pServerNode->first_node("Plugin"); pPluginNode; pPluginNode = pPluginNode->next_sibling("Plugin"))
+			{
+				const char* strPluginName = pPluginNode->first_attribute("Name")->value();
+				if (mPluginNameMap.find(strPluginName) == mPluginNameMap.end())
+				{
+					mPluginNameMap.insert(PluginNameMap::value_type(strPluginName, true));
+				}
+			}
+		}
+	}
 
     return true;
 }
@@ -257,17 +305,20 @@ bool NFPluginManager::LoadStaticPlugin()
 	CREATE_PLUGIN(this, NFNavigationPlugin)
 	CREATE_PLUGIN(this, NFNetPlugin)
 	CREATE_PLUGIN(this, NFNoSqlPlugin)
-	CREATE_PLUGIN(this, NFScalePlugin)
 	CREATE_PLUGIN(this, NFSecurityPlugin)
 	CREATE_PLUGIN(this, NFTestPlugin)
 
+#if NF_PLATFORM != NF_PLATFORM_LINUX
+	CREATE_PLUGIN(this, NFUIPlugin)
+	CREATE_PLUGIN(this, NFBluePrintPlugin)
+#endif
+		
 //DB
 	CREATE_PLUGIN(this, NFDBLogicPlugin)
 	CREATE_PLUGIN(this, NFDBNet_ClientPlugin)
 	CREATE_PLUGIN(this, NFDBNet_ServerPlugin)
 
 //GAME
-	CREATE_PLUGIN(this, NFGameLogicPlugin)
 	CREATE_PLUGIN(this, NFGameServerNet_ClientPlugin)
 	CREATE_PLUGIN(this, NFGameServerNet_ServerPlugin)
 	CREATE_PLUGIN(this, NFGameServerPlugin)
@@ -288,32 +339,10 @@ bool NFPluginManager::LoadStaticPlugin()
 	CREATE_PLUGIN(this, NFProxyServerNet_ServerPlugin)
 
 //WORLD
-	CREATE_PLUGIN(this, NFWorldLogicPlugin)
 	CREATE_PLUGIN(this, NFWorldNet_ClientPlugin)
 	CREATE_PLUGIN(this, NFWorldNet_ServerPlugin)
 
-//MIDWARE
-	CREATE_PLUGIN(this, NFChatPlugin)
-	CREATE_PLUGIN(this, NFFriendPlugin)
-	CREATE_PLUGIN(this, NFClanPlugin)
-	CREATE_PLUGIN(this, NFHeroPlugin)
-	CREATE_PLUGIN(this, NFItemBagPlugin)
-	CREATE_PLUGIN(this, NFMailPlugin)
-	CREATE_PLUGIN(this, NFRankPlugin)
-	CREATE_PLUGIN(this, NFShopPlugin)
-	CREATE_PLUGIN(this, NFSkillPlugin)
-	CREATE_PLUGIN(this, NFTaskPlugin)
-	CREATE_PLUGIN(this, NFUserGiftPlugin)
-	CREATE_PLUGIN(this, NFTeamPlugin)
 
-//TUTORIAL
-	CREATE_PLUGIN(this, Tutorial1)
-	CREATE_PLUGIN(this, Tutorial2)
-	CREATE_PLUGIN(this, Tutorial3Plugin)
-	CREATE_PLUGIN(this, Tutorial4Plugin)
-	CREATE_PLUGIN(this, Tutorial5)
-	CREATE_PLUGIN(this, Tutorial6)
-	CREATE_PLUGIN(this, Tutorial7)
 
 #endif
 
@@ -334,6 +363,7 @@ bool NFPluginManager::CheckStaticPlugin()
 			if (tempPluginName == strPluginName)
 			{
 				bFind = true;
+				break;
 			}
 		}
 
@@ -672,7 +702,7 @@ bool NFPluginManager::GetFileContent(const std::string &strFileName, std::string
 {
 	if (mGetFileContentFunctor)
 	{
-		return mGetFileContentFunctor(strFileName, strContent);
+		return mGetFileContentFunctor(this, strFileName, strContent);
 	}
 
 	FILE *fp = fopen(strFileName.c_str(), "rb");
@@ -972,17 +1002,29 @@ bool NFPluginManager::UnLoadStaticPlugin(const std::string & strPluginDLLName)
 	return false;
 }
 
-void NFPluginManager::ExecuteCoScheduler()
+void NFPluginManager::AddFileReplaceContent(const std::string& fileName, const std::string& content, const std::string& newValue)
 {
-    mxCoroutineManager.ScheduleJob();
+	auto it = mReplaceContent.find(fileName);
+	if (it == mReplaceContent.end())
+	{
+		std::vector<NFReplaceContent> v;
+		v.push_back(NFReplaceContent(content, newValue));
+
+		mReplaceContent.insert(std::pair<std::string, std::vector<NFReplaceContent> >(fileName, v));
+	}
+	else
+	{
+		it->second.push_back(NFReplaceContent(content, newValue));
+	}
 }
 
-void NFPluginManager::YieldCo(const int64_t nSecond)
+std::vector<NFReplaceContent> NFPluginManager::GetFileReplaceContents(const std::string& fileName)
 {
-	mxCoroutineManager.YieldCo(nSecond);
-}
+	auto it = mReplaceContent.find(fileName);
+	if (it != mReplaceContent.end())
+	{
+		return it->second;
+	}
 
-void NFPluginManager::YieldCo()
-{
-   mxCoroutineManager.YieldCo();
+	return std::vector<NFReplaceContent>();
 }

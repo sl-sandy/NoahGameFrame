@@ -27,12 +27,8 @@
 #define NF_WS_SERVER_MODULE_H
 
 #include <iostream>
-#include "NFNet.h"
-#include "NFComm/NFCore/NFMapEx.hpp"
-#include "NFComm/NFCore/NFPerformance.hpp"
-#include "NFComm/NFMessageDefine/NFDefine.pb.h"
+#include "NFNetModule.h"
 #include "NFComm/NFPluginModule/NFIWSModule.h"
-#include "NFComm/NFPluginModule/NFILogModule.h"
 
 class NFWSModule: public NFIWSModule
 {
@@ -64,7 +60,9 @@ public:
 
     virtual bool SendMsg(const std::string& msg, const NFSOCK nSockIndex, const bool text = true);
     virtual bool SendMsgToAllClient(const std::string& msg, const bool text = true);
-
+    virtual bool SendMsgWithOutHead(const int16_t nMsgID, const char* msg, const size_t nLen, const NFSOCK nSockIndex /*= 0*/);
+    virtual bool SendMsgPB(const uint16_t nMsgID, const google::protobuf::Message& xData, const NFSOCK nSockIndex);
+    int EnCode(const uint16_t unMsgID, const char* strData, const uint32_t unDataLen, std::string& strOutData);
     virtual NFINet* GetNet();
 
     virtual void OnError(const NFSOCK nSockIndex, const std::error_code& e);
@@ -80,6 +78,7 @@ protected:
     std::error_code HandShake(const NFSOCK nSockIndex, const char* msg, const uint32_t nLen);
 
     std::error_code DecodeFrame(const NFSOCK nSockIndex,NetObject* pNetObject);
+    int DeCode(const char* strData, const uint32_t unAllLen, NFMsgHead& xHead);
 
     std::string EncodeFrame(const char* data, size_t size, bool text);
     

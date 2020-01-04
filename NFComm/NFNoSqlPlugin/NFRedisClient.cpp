@@ -75,7 +75,8 @@ bool NFRedisClient::KeepLive()
 
 bool NFRedisClient::ReConnect()
 {
-	return m_pRedisClientSocket->ReConnect(mstrIP, mnPort);
+    this->mbAuthed = false;
+    return m_pRedisClientSocket->ReConnect(mstrIP, mnPort);
 }
 
 bool NFRedisClient::IsConnect()
@@ -99,7 +100,7 @@ NF_SHARE_PTR<redisReply> NFRedisClient::BuildSendCmd(const NFRedisCommand& cmd)
 {
 	while (mbBusy)
 	{
-		std::this_thread::sleep_for(std::chrono::milliseconds(1));
+		//std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
 		//you can not use build send cmd funciton again if you are not using coroutine
 		if (YieldFunction)

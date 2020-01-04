@@ -31,20 +31,17 @@
 #include <time.h>
 #include <thread>
 #include "NFDynLib.h"
-#include "NFCoroutineManager.h"
-#include "NFComm/NFCore/NFSingleton.hpp"
 #include "NFComm/NFPluginModule/NFIModule.h"
 #include "NFComm/NFPluginModule/NFIPluginManager.h"
 
-void CoroutineExecute(void* arg);
-
 class NFPluginManager
-    : public NFIPluginManager,
-	public NFSingleton<NFPluginManager>
+    : public NFIPluginManager
 {
 public:
     NFPluginManager();
     virtual ~NFPluginManager();
+
+    virtual bool LoadPluginConfig() override;
 
     virtual bool LoadPlugin() override;
 
@@ -129,15 +126,10 @@ public:
 
     virtual bool GetFileContent(const std::string &strFileName, std::string &strContent) override;
 
-    virtual void ExecuteCoScheduler() override;
-
-    virtual void YieldCo(const int64_t nSecond) override;
-
-    virtual void YieldCo() override;
-    
+	virtual void AddFileReplaceContent(const std::string& fileName, const std::string& content, const std::string& newValue);
+	virtual std::vector<NFReplaceContent> GetFileReplaceContents(const std::string& fileName);
 
 protected:
-    bool LoadPluginConfig();
 
     bool LoadStaticPlugin();
     bool CheckStaticPlugin();
@@ -171,6 +163,7 @@ private:
     typedef void(* DLL_STOP_PLUGIN_FUNC)(NFIPluginManager* pm);
 
     std::vector<std::string> mStaticPlugin;
+	std::map<std::string, std::vector<NFReplaceContent>> mReplaceContent;
 
     PluginNameMap mPluginNameMap;
     PluginLibMap mPluginLibMap;
@@ -179,8 +172,6 @@ private:
     TestModuleInstanceMap mTestModuleInstanceMap;
 
     GET_FILECONTENT_FUNCTOR mGetFileContentFunctor;
-
-    NFCoroutineManager mxCoroutineManager;
 };
 
 #endif

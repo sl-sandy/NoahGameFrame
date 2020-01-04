@@ -62,7 +62,7 @@ bool NFHelloWorld5::AfterInit()
 
 	m_pNetModule->Initialization(9999, 5001);
 	m_pNetModule->AddEventCallBack( this, &NFHelloWorld5::OnTCPEvent);
-	m_pNetModule->AddReceiveCallBack(NFMsg::EGMI_REQ_LOGIN, this, &NFHelloWorld5::OnLoginProcess);
+	m_pNetModule->AddReceiveCallBack(NFMsg::REQ_LOGIN, this, &NFHelloWorld5::OnLoginProcess);
 
     return true;
 }

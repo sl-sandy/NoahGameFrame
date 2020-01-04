@@ -30,18 +30,12 @@
 #if NF_PLATFORM == NF_PLATFORM_WIN
 #include <WS2tcpip.h>
 #include <winsock2.h>
-#pragma  comment(lib,"Ws2_32.lib")
-#ifndef LIBEVENT_SRC
-#pragma  comment(lib,"libevent.lib")
-#pragma  comment(lib,"libevent_core.lib")
-#endif
 #elif NF_PLATFORM == NF_PLATFORM_APPLE
 #include <arpa/inet.h>
 #endif
 
 #include "event2/event.h"
 #include "event2/bufferevent_struct.h"
-#include "NFComm/NFLogPlugin/easylogging++.h"
 
 /*
 if any one want to upgrade the networking library(libEvent), please change the size of evbuffer as below:
@@ -56,7 +50,7 @@ TO
 
 void NFNet::event_fatal_cb(int err)
 {
-    LOG(FATAL) << "event_fatal_cb " << err;
+    //LOG(FATAL) << "event_fatal_cb " << err;
 
 }
 void NFNet::conn_writecb(struct bufferevent* bev, void* user_data)
@@ -631,7 +625,7 @@ void NFNet::ExecuteClose()
 
 void NFNet::log_cb(int severity, const char* msg)
 {
-    LOG(FATAL) << "severity:" << severity << " " << msg; 
+    //LOG(FATAL) << "severity:" << severity << " " << msg; 
 }
 
 bool NFNet::IsServer()

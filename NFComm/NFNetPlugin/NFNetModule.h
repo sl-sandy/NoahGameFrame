@@ -26,15 +26,16 @@
 #ifndef NF_NET_MODULE_H
 #define NF_NET_MODULE_H
 
+#include "NFNet.h"
 #include <iostream>
 #include <iosfwd>
-#include "NFNet.h"
+#include "NFComm/NFMessageDefine/NFMsgDefine.h"
 #include "NFComm/NFCore/NFQueue.hpp"
 #include "NFComm/NFCore/NFPerformance.hpp"
 #include "NFComm/NFPluginModule/NFINetModule.h"
 #include "NFComm/NFPluginModule/NFILogModule.h"
 #include "NFComm/NFPluginModule/NFIPluginManager.h"
-#include "NFComm/NFMessageDefine/NFMsgDefine.h"
+
 
 #ifdef _MSC_VER
 #pragma warning(disable: 4244 4267)
@@ -50,7 +51,7 @@
 #include "NFComm/NFCore/NFException.h"
 #endif
 
-class NFNetModule: public NFINetModule
+class NFNetModule : public NFINetModule
 {
 public:
     NFNetModule(NFIPluginManager* p);

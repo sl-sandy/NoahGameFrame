@@ -25,8 +25,8 @@
 
 
 #include "NFLuaScriptModule.h"
-#include "NFLuaPBModule.h"
 #include "NFLuaWebSocketModule.h"
+#include "NFLuaPBModule.h"
 #include "NFLuaScriptPlugin.h"
 
 #ifdef NF_DYNAMIC_PLUGIN

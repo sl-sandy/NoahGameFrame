@@ -316,7 +316,15 @@ typedef int64_t NFSOCK;
 #define EPOCHFILETIME 11644473600000000ULL
 #else
 #include <WinSock2.h>
-#include <windows.h>
+#include <Windows.h>
+#define NOMINMAX
+#ifdef min
+#undef min
+#endif
+#ifdef max
+#undef max
+#endif
+
 #include <time.h>
 #include <process.h>
 #define EPOCHFILETIME 11644473600000000Ui64
@@ -338,7 +346,7 @@ typedef int64_t NFSOCK;
 
 #if NF_PLATFORM == NF_PLATFORM_WIN
 #ifndef NF_DYNAMIC_PLUGIN
-#define NF_DYNAMIC_PLUGIN 1
+//#define NF_DYNAMIC_PLUGIN 1
 #endif
 #endif
 
@@ -407,12 +415,9 @@ inline int64_t NFGetTimeS()
 }
 
 //Protobuf Using Dlls
-/*
 #if NF_PLATFORM == NF_PLATFORM_WIN
-#ifndef PROTOBUF_USE_DLLS
-#define PROTOBUF_USE_DLLS
+
+
 #endif
-#endif
-*/
 
 #endif

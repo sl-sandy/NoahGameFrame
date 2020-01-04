@@ -37,8 +37,6 @@
 #include "NFComm/NFPluginModule/NFIKernelModule.h"
 #include "NFComm/NFPluginModule/NFILoginNet_ServerModule.h"
 #include "NFComm/NFPluginModule/NFIWorldToMasterModule.h"
-#include "NFComm/NFPluginModule/NFIWorldPVPModule.h"
-#include "NFComm/NFPluginModule/NFITeamModule.h"
 
 class NFWorldNet_ServerModule
     : public NFIWorldNet_ServerModule
@@ -57,8 +55,8 @@ public:
     virtual bool AfterInit();
 	virtual void OnServerInfoProcess(const NFSOCK nSockIndex, const int nMsgID, const char* msg, const uint32_t nLen);
 
-    virtual bool SendMsgToGame(const NFGUID nPlayer, const NFMsg::EGameMsgID eMsgID, google::protobuf::Message& xData);
-    virtual bool SendMsgToGame(const NFDataList& argObjectVar, const NFMsg::EGameMsgID eMsgID, google::protobuf::Message& xData);
+    virtual bool SendMsgToGame(const NFGUID nPlayer, const int msgID, google::protobuf::Message& xData);
+    virtual bool SendMsgToGame(const NFDataList& argObjectVar, const int msgID, google::protobuf::Message& xData);
 
     virtual NF_SHARE_PTR<ServerData> GetSuitProxyForEnter();
 
@@ -80,9 +78,6 @@ protected:
     void OnTransmitServerReport(const NFSOCK nFd, const int msgId, const char *buffer, const uint32_t nLen);
     void ServerReport(int reportServerId, NFMsg::EServerState serverStatus);
 
-
-    void OnReqSwitchServer(const NFSOCK nSockIndex, const int nMsgID, const char *msg, const uint32_t nLen);
-    void OnAckSwitchServer(const NFSOCK nSockIndex, const int nMsgID, const char *msg, const uint32_t nLen);
 protected:
 
     void OnGameServerRegisteredProcess(const NFSOCK nSockIndex, const int nMsgID, const char* msg, const uint32_t nLen);
@@ -132,8 +127,6 @@ private:
     NFILogModule* m_pLogModule;
 	NFINetModule* m_pNetModule;
 	NFINetClientModule* m_pNetClientModule;
-	NFIWorldPVPModule* m_pWorldPVPModule;
-	NFITeamModule* m_pTeamModule;
 };
 
 #endif
