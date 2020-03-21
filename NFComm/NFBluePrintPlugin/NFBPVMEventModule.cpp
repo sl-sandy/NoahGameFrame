@@ -32,6 +32,7 @@ bool NFBPVMEventModule::Awake()
     m_pBluePrintModule = pPluginManager->FindModule<NFIBluePrintModule>();
     m_pKernelModule = pPluginManager->FindModule<NFIKernelModule>();
     m_pEventModule = pPluginManager->FindModule<NFIEventModule>();
+    m_pNetModule = pPluginManager->FindModule<NFINetModule>();
     
 	return true;
 }
@@ -48,6 +49,8 @@ bool NFBPVMEventModule::AfterInit()
     m_pKernelModule->RegisterCommonRecordEvent(this, &NFBPVMEventModule::OnRecordCommonEvent);
 
     m_pEventModule->AddCommonEventCallBack(this, &NFBPVMEventModule::OnEventCommonEvent);
+
+    m_pNetModule->AddReceiveCallBack(this, &NFBPVMEventModule::OnMessageEvent);
 
 	return true;
 }
@@ -89,6 +92,8 @@ bool NFBPVMEventModule::OnReloadPlugin()
 
 int NFBPVMEventModule::OnEventCommonEvent(const NFGUID& self, const int eventID, const NFDataList& var)
 {
+    NFMapEx<std::string, NFData> emptyMap;
+
     auto item = mBluePrintBlockAction.First();
     while (item)
     {
@@ -99,6 +104,8 @@ int NFBPVMEventModule::OnEventCommonEvent(const NFGUID& self, const int eventID,
             auto monitorData =  eventData->First(monitorID);
             while (monitorData && !monitorID.IsNull())
             {
+                //const NFGUID& objectID, const  NFGUID& monitorID, const int eventI
+                monitorData->operator()(self, monitorID, eventID, emptyMap);
 
                 monitorID.SetHead(0);
                 monitorID.SetData(0);
@@ -132,6 +139,35 @@ int NFBPVMEventModule::OnPropertyCommonEvent(const NFGUID& self, const std::stri
 int NFBPVMEventModule::OnRecordCommonEvent(const NFGUID& self, const RECORD_EVENT_DATA& xEventData, const NFData& oldVar, const NFData& newVar)
 {
     return 0;
+}
+
+void NFBPVMEventModule::OnMessageEvent(const NFSOCK nSockIndex, const int nMsgID, const char* msg, const uint32_t nLen)
+{
+    // unpack
+    NFGUID playerID(1, 1);
+    NFMapEx<std::string, NFData> emptyMap;
+
+    auto item = mBluePrintBlockAction.First();
+    while (item)
+    {
+        auto eventData = item->mNetMsgEvent.GetElement(nMsgID);
+        if (eventData)
+        {
+            NFGUID monitorID;
+            auto monitorData = eventData->First(monitorID);
+            while (monitorData && !monitorID.IsNull())
+            {
+                //const NFGUID& objectID, const  NFGUID& monitorID, const int eventID
+                monitorData->operator()(playerID, monitorID, nMsgID, emptyMap);
+
+                monitorID.SetHead(0);
+                monitorID.SetData(0);
+                monitorData = eventData->Next(monitorID);
+            }
+        }
+
+        item = mBluePrintBlockAction.Next();
+    }
 }
 
 bool NFBPVMEventModule::RegisterGameEventCallBack(const NFGUID blockID, const int eventID, const NFGUID monitorID, const BLUEPRINT_EVENT_FUNCTOR& functor)
